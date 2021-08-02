@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StuModule">
+   <children>
+      <AnchorPane prefHeight="85.0" prefWidth="600.0" style="-fx-background-color: #000051;">
+         <children>
+            <Label alignment="CENTER" layoutX="143.0" layoutY="14.0" prefHeight="39.0" prefWidth="314.0" text="Goodwill Institute" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="34.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="275.0" layoutY="53.0" text=" Modules" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="back_btn" layoutX="10.0" layoutY="14.0" onAction="#HandleBtn" prefHeight="27.0" prefWidth="50.0" style="-fx-background-color: White;" text="Back" />
+            <JFXButton fx:id="exit_btn" layoutX="10.0" layoutY="48.0" onAction="#HandleBtn" prefHeight="27.0" prefWidth="50.0" style="-fx-background-color: White;" text="Exit" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tbl" layoutY="121.0" prefHeight="279.0" prefWidth="600.0" style="-fx-background-color: white;">
+        <columns>
+          <TableColumn fx:id="Mod_Col" editable="false" prefWidth="220.0" text="Module" />
+          <TableColumn fx:id="Cred_Col" prefWidth="72.0" text="Credit" />
+            <TableColumn fx:id="Deg_Col" prefWidth="181.0" text="Degree" />
+            <TableColumn fx:id="Year_Col" prefWidth="112.0" text="Academic Year" />
+        </columns>
+      </TableView>
+      <Label fx:id="year_lbl" layoutX="320.0" layoutY="95.0" prefHeight="17.0" prefWidth="239.0" text="Year : " textFill="#000051">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="degree_lbl" layoutX="14.0" layoutY="95.0" prefHeight="17.0" prefWidth="263.0" text="Degree : " textFill="#000051">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

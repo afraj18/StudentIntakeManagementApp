@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="409.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminModuleTable">
+   <children>
+      <AnchorPane prefHeight="84.0" prefWidth="656.0" style="-fx-background-color: #000051;">
+         <children>
+            <Label alignment="CENTER" layoutX="143.0" layoutY="14.0" prefHeight="39.0" prefWidth="314.0" text="Goodwill Institute" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="34.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="253.0" layoutY="53.0" text="Manage Modules" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="back_btn" layoutX="18.0" layoutY="14.0" onAction="#HandleBtn" prefHeight="27.0" prefWidth="62.0" style="-fx-background-color: white;" text="Back" />
+            <JFXButton fx:id="exit_btn" layoutX="18.0" layoutY="48.0" onAction="#HandleBtn" prefHeight="27.0" prefWidth="62.0" style="-fx-background-color: white;" text="Exit" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tbl" layoutY="84.0" prefHeight="256.0" prefWidth="656.0">
+        <columns>
+          <TableColumn fx:id="id_Col" prefWidth="46.0" text="ID" />
+          <TableColumn fx:id="mod_Col" prefWidth="201.0" text="Module Name" />
+            <TableColumn fx:id="Deg_Col" prefWidth="144.0" text="Degree" />
+            <TableColumn fx:id="Fac_Col" prefWidth="179.0" text="Faculty" />
+            <TableColumn fx:id="year_Col" prefWidth="85.0" text="Year" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="del_btn" layoutX="428.0" layoutY="359.0" onAction="#HandleBtn" prefHeight="27.0" prefWidth="152.0" style="-fx-background-color: black;" text="Delete Module" textFill="WHITE" />
+   </children>
+</AnchorPane>

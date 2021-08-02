@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Lecturer">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="600.0" style="-fx-background-color: #000051;">
+         <children>
+            <Text fill="WHITE" layoutX="156.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Goodwill Institute" textAlignment="CENTER" wrappingWidth="287.22900390625">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="exit_btn" layoutX="14.0" layoutY="10.0" onAction="#handleBtn" prefHeight="27.0" prefWidth="46.0" style="-fx-background-color: white;" text="Exit" />
+            <JFXButton fx:id="back_btn" layoutX="14.0" layoutY="45.0" onAction="#handleBtn" style="-fx-background-color: white;" text="Back" />
+            <Label layoutX="245.0" layoutY="49.0" text="Lecturer Detials" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="lect_tbl" layoutY="82.0" prefHeight="318.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="id_col" prefWidth="46.0" text="ID" />
+          <TableColumn fx:id="name_col" prefWidth="210.0" text="Name" />
+            <TableColumn fx:id="course_col" prefWidth="181.0" text="Course Unit" />
+            <TableColumn fx:id="fac_col" prefWidth="162.0" text="Faculty" />
+        </columns>
+      </TableView>
+      <Label fx:id="rs_lbl" alignment="CENTER" layoutY="337.0" prefHeight="17.0" prefWidth="197.0" text="Label" textFill="RED" visible="false">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

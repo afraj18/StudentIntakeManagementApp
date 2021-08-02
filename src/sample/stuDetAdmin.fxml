@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="390.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StuDetAdmin">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="623.0" style="-fx-background-color: #000051;">
+         <children>
+            <Label alignment="CENTER" layoutX="181.0" layoutY="14.0" prefHeight="17.0" prefWidth="329.0" style="" text="Goodwill Institute" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="42.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="280.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Details" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="backBtn" layoutX="14.0" layoutY="45.0" onAction="#backActions" prefHeight="27.0" prefWidth="65.0" style="-fx-background-color: white;" text="Back" textFill="#1b0101">
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="exitBtn" layoutX="14.0" layoutY="14.0" onAction="#backActions" prefHeight="27.0" prefWidth="65.0" style="-fx-background-color: white;" text="Exit" textFill="#1b0101">
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="stuTable" layoutX="88.0" layoutY="95.0" prefHeight="286.0" prefWidth="528.0">
+        <columns>
+          <TableColumn fx:id="id_Col" prefWidth="31.0" text="ID" />
+          <TableColumn fx:id="name_Col" prefWidth="141.0" text="Name" />
+            <TableColumn fx:id="email_Col" prefWidth="176.0" text="Email" />
+            <TableColumn fx:id="stream_Col" minWidth="7.0" prefWidth="76.0" text="Stream" />
+            <TableColumn fx:id="deg_Col" minWidth="7.0" prefWidth="103.0" text="Degree" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

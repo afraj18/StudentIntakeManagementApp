@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="637.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-2.0" prefHeight="99.0" prefWidth="637.0" style="-fx-background-color: #000051;" text="GOODWILL INSTITUTE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Label>
+      <Button layoutX="8.0" layoutY="14.0" mnemonicParsing="false" text="Home" />
+      <Label alignment="CENTER" layoutX="63.0" layoutY="120.0" prefHeight="34.0" prefWidth="530.0" text="Welcome to School of computing of GOODWILL INSTITUE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="202.0" prefHeight="25.0" prefWidth="530.0" text="Degree programme :-       Certificate in Computer Science degree programme">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label ellipsisString="" layoutX="159.0" layoutY="257.0" prefHeight="34.0" prefWidth="83.0" text="Details :-         ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="250.0" layoutY="267.0" prefHeight="17.0" prefWidth="349.0" text="The computer science consists of 3 years of lectures" />
+      <Label layoutX="252.0" layoutY="308.0" prefHeight="17.0" prefWidth="349.0" text="For the completion of three year BSc in CCS degree programme" />
+      <Button layoutX="205.0" layoutY="437.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="247.0" style="-fx-background-color: #000051;" text="Course modules" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

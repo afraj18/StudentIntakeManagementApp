@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminSemRegStu">
+   <children>
+      <AnchorPane prefHeight="83.0" prefWidth="600.0" style="-fx-background-color: #000051;">
+         <children>
+            <Label layoutX="153.0" layoutY="14.0" text="Goodwill Institute" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="38.0" />
+               </font>
+            </Label>
+            <Label layoutX="169.0" layoutY="60.0" text="Semester registration details of  Students" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="exit_btn" layoutX="14.0" layoutY="14.0" onAction="#handleBtn" prefHeight="27.0" prefWidth="57.0" style="-fx-background-color: white;" text="Exit" />
+            <JFXButton fx:id="back_btn" layoutX="14.0" layoutY="44.0" onAction="#handleBtn" prefHeight="27.0" prefWidth="57.0" style="-fx-background-color: white;" text="Back" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tbl" layoutY="83.0" prefHeight="318.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="id_Col" prefWidth="43.0" text="ID" />
+          <TableColumn fx:id="name_Col" prefWidth="182.0" text="Name" />
+            <TableColumn fx:id="fac_Col" minWidth="0.0" prefWidth="111.0" text="Faculty" />
+            <TableColumn fx:id="deg_Col" prefWidth="174.0" text="Degree" />
+            <TableColumn fx:id="year_Col" prefWidth="89.0" text="Year of study" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

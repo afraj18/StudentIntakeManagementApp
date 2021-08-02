@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminHomePage">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="608.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/d794f2aaed27b915ff691d74a09d4572.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="96.0" prefWidth="608.0" style="-fx-background-color: #000051;">
+         <children>
+            <Label alignment="CENTER" layoutX="96.0" layoutY="14.0" prefHeight="36.0" prefWidth="417.0" style="-fx-border-color: white;" text="Goodwill Institute" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="32.0" />
+               </font>
+            </Label>
+            <Button fx:id="signOut_btn" layoutX="523.0" layoutY="57.0" mnemonicParsing="false" onAction="#HandleAct" prefHeight="19.0" prefWidth="73.0" style="-fx-background-color: white;" text="Sign Out">
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font>
+            </Button>
+            <JFXButton fx:id="exit_btn" layoutX="7.0" layoutY="56.0" onAction="#HandleAct" prefHeight="27.0" prefWidth="73.0" style="-fx-background-color: white;" text="Exit">
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <Label alignment="CENTER" layoutX="257.0" layoutY="60.0" text="Admin Panel" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="stuDet_btn" contentDisplay="TOP" layoutX="14.0" layoutY="143.0" onAction="#HandleAct" prefHeight="96.0" prefWidth="190.0" style="-fx-background-color: #000051;" text="Student Details" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-student-male-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="sem_Reg_btn" alignment="CENTER" contentDisplay="TOP" layoutX="14.0" layoutY="247.0" onAction="#HandleAct" prefHeight="96.0" prefWidth="190.0" style="-fx-background-color: #000051;" text="Students Registered for Semesters" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-exam-64-2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="ModManage_btn" contentDisplay="TOP" layoutX="209.0" layoutY="247.0" onAction="#HandleAct" prefHeight="96.0" prefWidth="190.0" style="-fx-background-color: #000051;" text="Manage Course Modules " textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-module-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="admin_btn" contentDisplay="TOP" layoutX="404.0" layoutY="247.0" onAction="#HandleAct" prefHeight="96.0" prefWidth="190.0" style="-fx-background-color: #000051;" text="Add Administrators" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-registration-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="manageFac_btn" contentDisplay="TOP" layoutX="210.0" layoutY="143.0" onAction="#HandleAct" prefHeight="96.0" prefWidth="190.0" style="-fx-background-color: #000051;" text="Manage Faculty Details" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-university-64-2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="lect_btn" contentDisplay="TOP" layoutX="404.0" layoutY="143.0" onAction="#HandleAct" prefHeight="96.0" prefWidth="190.0" style="-fx-background-color: #000051;" text="Lecturer Management" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-training-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

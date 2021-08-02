@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminModuleManage">
+   <children>
+      <AnchorPane prefHeight="85.0" prefWidth="600.0" style="-fx-background-color: #000051;">
+         <children>
+            <Label alignment="CENTER" layoutX="143.0" layoutY="14.0" prefHeight="39.0" prefWidth="314.0" text="Goodwill Institute" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="34.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="253.0" layoutY="53.0" text="Manage Modules" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="back_btn" layoutX="14.0" layoutY="48.0" onAction="#HandleBtn" prefHeight="27.0" prefWidth="64.0" style="-fx-background-color: White;" text="Back" />
+            <JFXButton fx:id="exit_btn" layoutX="14.0" layoutY="14.0" onAction="#HandleBtn" prefHeight="27.0" prefWidth="64.0" style="-fx-background-color: White;" text="Exit" />
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="modName_tf" labelFloat="true" layoutX="128.0" layoutY="97.0" prefHeight="27.0" prefWidth="360.0" promptText="Module Name" />
+      <JFXTextField fx:id="credit_tf" labelFloat="true" layoutX="127.0" layoutY="139.0" prefHeight="27.0" prefWidth="360.0" promptText="Credit" />
+      <JFXComboBox fx:id="deg_Cb" labelFloat="true" layoutX="127.0" layoutY="187.0" prefHeight="27.0" prefWidth="360.0" promptText="Degree" />
+      <JFXComboBox fx:id="fac_Cb" labelFloat="true" layoutX="127.0" layoutY="278.0" prefHeight="27.0" prefWidth="360.0" promptText="Faculty" />
+      <JFXButton fx:id="add_btn" layoutX="215.0" layoutY="330.0" onAction="#HandleBtn" prefHeight="27.0" prefWidth="185.0" style="-fx-background-color: #000051;" text="Add Module" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="mod_btn" layoutX="261.0" layoutY="364.0" onAction="#HandleBtn" style="-fx-background-color: #000051;" text="Go to Modules" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="year_cb" labelFloat="true" layoutX="128.0" layoutY="235.0" prefHeight="27.0" prefWidth="360.0" promptText="Acadamic Year" />
+   </children>
+</AnchorPane>
